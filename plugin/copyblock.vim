@@ -23,4 +23,14 @@ function! CopyBlock() range
 
     let l:joinedLines = join(l:lines, "\n")
     let @* = l:title . "\n" . l:joinedLines
+
+    let numLinesCopied = (lnum2 - lnum1) + 1
+
+    " Use redraw here so the message shows.
+    redraw
+    if numLinesCopied == 1
+        echo "1 line copied"
+    else
+        echo numLinesCopied . " lines copied"
+    endif
 endfunction
