@@ -9,3 +9,7 @@ To use, select a range and:
 ```
 :call CopyBlock()
 ```
+
+License
+-------
+MIT.
