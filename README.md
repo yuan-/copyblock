@@ -1,4 +1,4 @@
-Alignify
+CopyBlock
 --------
 A vim plugin to copy a block of text.
 
