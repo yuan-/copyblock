@@ -23,6 +23,8 @@ function! CopyBlock() range
 
     let l:joinedLines = join(l:lines, "\n")
     let @* = l:title . "\n" . l:joinedLines
+    let @+ = l:title . "\n" . l:joinedLines
+    let @" = l:title . "\n" . l:joinedLines
 
     let numLinesCopied = (lnum2 - lnum1) + 1
 
